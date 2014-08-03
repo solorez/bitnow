@@ -1,0 +1,94 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bit Now 设置</title>
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+    <h1><img src="image/bitcoin-icon.png"> Bit Now 选项设置与说明</h1>
+    <hr>
+    <div class="col-md-8">
+        <form id="setting">
+            <div class="display">
+                <h3>显示</h3>
+                <p class="text-info">选择地址栏旁要显示的图标和数据来源</p>
+                <div>
+                    <h4>图标</h4>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="coinkind" value="bitcoin" checked>
+                            勾选此项，则地址栏旁将显示Bitcoin图标，并在图标下方显示最新的Bitcoin价格（默认）
+                        </label><br>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="coinkind" value="litecoin">
+                            勾选此项，则地址栏旁将显示Litecoin图标，并在图标下方显示最新的Litecoin价格
+                        </label><br>
+                    </div>
+                </div>
+                <div>
+                    <h4>数据来源</h4>
+                    <p class="text-info">该数据源将被优先显示，该数据源与报警信息关联</p>
+                    <p class="text-warning">注意：修改市场数据来源之后一定要修改报警信息，否则可能会由于货币差异造成频繁报警</p>
+                    Bitcoin数据来源：
+                    <select class="form-control" name="bitcoin">
+                        <option value="OkCoin">OkCoin</option>
+                        <option value="MtGox">MtGox</option>
+                        <option value="BTCTrade">BTCTrade</option>
+                        <option value="BTCChina">BTCChina</option>
+                        <option value="BTC-E">BTC-E</option>
+                    </select>
+                    Litecoin数据来源：
+                    <select class="form-control" name="litecoin">
+                        <option value="OkCoin">OkCoin</option>
+                        <option value="BTC-E">BTC-E</option>
+                    </select>
+                </div>
+                <hr>
+            </div>
+            <div>
+                <h3>报警</h3>
+                <p class="text-info">设置阈值，当阈值与设置的水平值之差的绝对值大于阈值时，会发出桌面通知</p>
+                <p class="text-warning">当第一次桌面通知之后阈值将在当前设置阈值的基础上自动更改（bitcoin自动加100，litecoin自动加5）;
+                    建议在收到通知之后立即回到该设置页面手动修改</p>
+                <h4>BitCoin:</h4>
+                <div class="form-group">
+                    <label for="bitcoin-shuiping">水平值（默认填充为当前价格)</label>
+                    <input type="number" class="form-control" id="bitcoin-shuiping" value="5300">
+                </div>
+                <div class="form-group">
+                    <label for="bitcoin-yuzhi">阈值</label>
+                    <input type="number" class="form-control" id="bitcoin-yuzhi" value="200">
+                </div>
+                <h4>LiteCoin:</h4>
+                <div class="form-group">
+                    <label for="litecoin-shuiping">水平值(默认填充为当前价格)</label>
+                    <input type="number" class="form-control" id="litecoin-shuiping" value="190">
+                </div>
+                <div class="form-group">
+                    <label for="litecoin-yuzhi">阈值</label>
+                    <input type="number" class="form-control" id="litecoin-yuzhi" value="10">
+                </div>
+                <hr>
+            </div>
+            <button type="submit" class="btn btn-primary">保存设置</button>
+        </form>
+    </div>
+    <div class="col-md-4">
+        <h3>相关说明</h3>
+        <hr>
+        <h4>声明</h4>
+        <p class="text-danger">本插件任何人可免费使用，所有数据采集自各交易市场官方api，为了统一格式，部分数据做了简单的小数舍入处理，所有数据仅供参考，如果因数据的错误造成您的任何损失或收益与应用作者无关！</p>
+        <hr>
+        <h4>关于</h4>
+        <p>作者: MaGuowei</p>
+        <p>Email: imaguowei@gmail.com</p>
+    </div>
+</div>
+<script src="js/coinnow.js"></script>
+<script src="js/options.js"></script>
+</body>
+</html>

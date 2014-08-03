@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bitcoin Now</title>
+    <link rel="stylesheet" href="vendor/odometer/themes/odometer-theme-minimal.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <img src="image/bitcoin-icon.png">
+            <div id="last-bitcoin" class="odometer last">0</div>
+            <div id="last-bitcoin-market"></div>
+        </div>
+        <div class="col-xs-6">
+            <img src="image/litecoin-icon.png">
+            <div id="last-litecoin" class="odometer last ">0</div>
+            <div id="last-litecoin-market"></div>
+        </div>
+    </div>
+    <div id="bitcoin">
+        <h3>Bitcoin</h3>
+        <div>
+            <table class="table table-hover">
+                <thead>
+                    <th>Market</th><th>Last</th><th>Buy</th><th>Sell</th><th>High</th><th>Low</th><th>Vol</th><th>Symbol</th>
+                </thead>
+                <tbody id="bitcoin-tbody">
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="litecoin">
+        <hr>
+        <h3>Litecoin</h3>
+        <div>
+            <table class="table table-hover">
+                <thead>
+                    <th>Market</th><th>Last</th><th>Buy</th><th>Sell</th><th>High</th><th>Low</th><th>Vol</th><th>Symbol</th>
+                </thead>
+                <tbody id="litecoin-tbody">
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<footer>
+    <button type="button" class="btn btn-primary btn-lg btn-block donate-button">Donate</button>
+    <div class="donate-address">
+        <p class="text-info">Email：imaguowei@gmail.com</p>
+        <p class="text-info">Bitcoin wallet address：1MYdqop4qMfubTvRKsViZBpXaitW4cdccB</p>
+    </div>
+</footer>
+</div>
+<script src="vendor/odometer/odometer.min.js"></script>
+<script src="js/coinnow.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
