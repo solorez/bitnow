@@ -4,7 +4,6 @@
 
 =================
 
-
 ## 特色功能：
 
 
@@ -13,6 +12,7 @@
 2.桌面通知报警（设置阈值，当前价格与水平值之差的绝对值大于阈值的时候发送桌面通知）
 
 
+## 安装使用: [Chrome webstore](https://chrome.google.com/webstore/detail/bit-now/cbeifbmpjcffahlknjhdhlngfoolfogn?utm_source=chrome-ntp-icon&authuser=1 )
 
 
 ## 数据来源
